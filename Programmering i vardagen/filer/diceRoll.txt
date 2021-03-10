@@ -1,3 +1,3 @@
-Simulera 10 tarningskast: [11, 3, 9, 10, 3, 2, 2, 7, 5, 4]
-Kastet sorterat: [2, 2, 3, 3, 4, 5, 7, 9, 10, 11]
+10 simulerade tarningskast: [9, 7, 4, 8, 9, 5, 2, 1, 4, 3]
+Kasten sorterade: [1, 2, 3, 4, 4, 5, 7, 8, 9, 9]
 Antalet femmor: 1
