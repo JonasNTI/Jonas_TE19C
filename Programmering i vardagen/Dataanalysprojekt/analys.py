@@ -64,13 +64,13 @@ def update_figure(value):
     if value == "smittade":
          df = df_age_c
          fig = px.bar(df, x="age", y=value, title=f"Antal {value} per åldersgrupp") # stapeldiagram (smittade per åldersgrupp)
-    if value == "dödsfall":
+    elif value == "dödsfall":
         df = df_age_d
         fig = px.bar(df, x="age", y=value, title=f"Antal {value} per åldersgrupp") # stapeldiagram (döda per åldersgrupp)
-    if value == "cid":
+    elif value == "cid":
         df = df_cid
         fig = px.bar(df, x="antal", y="smittade_döda_ICU", orientation="h", title=f"Totalt antal smittade, döda och intensivvårdade") # liggande stapeldiagram (antal smittade/döda/ICU)
-    if value == "cd":
+    elif value == "cd":
         fig = px.pie(names=["levande som är/varit smittade", "smittade som dött"], values=[levande_smittade,döda_smittade], title=f"Procentuell andel av alla covid fall som lett till död") # cirkeldiagram (smittade som har/inte har dött)
 
     fig.update_layout(transition_duration=500) # tiden det tar för en graf att bytas ut mot en annan
